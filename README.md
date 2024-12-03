@@ -164,6 +164,37 @@ Visualize segmented shapes together and highlight each one.
 [Task 4-8.1](images/Task4-8.1.png)  
 
 ---
+### 🧑‍💻 **Implementation Details**
+
+Here’s how each task was implemented:
+
+1. **Detect Shape Coordinates**  
+   Shapes were identified using contour detection (`cv2.findContours`). The centroids were calculated using moments (`cv2.moments`) to determine the geometric center of each shape.
+
+2. **Compute Shape Areas**  
+   The area of each shape was computed using the contour area function (`cv2.contourArea`) after detecting contours in the binary image.
+
+3. **Traffic Signal Detection**  
+   The image was converted to HSV color space. Masks were created for red, yellow, and green hues. Pixel intensities in these masks determined which signal was active.
+
+4. **Shape and Color Detection**  
+   - **4.1 & 4.2: Detect Large and Small Circles**  
+     Circle detection was implemented using the Hough Circle Transform (`cv2.HoughCircles`) with varying radius thresholds.  
+   - **4.3: Detect Corners**  
+     Corners were detected using the Harris Corner Detection (`cv2.goodFeaturesToTrack`) to identify distinct corners in the shapes.  
+   - **4.4: Detect Red Circles**  
+     The red color was isolated using HSV masks for two red hue ranges, and circles were filtered from the result using Hough Circle Transform.  
+   - **4.5: Detect Green Shapes**  
+     The green color was detected using an HSV mask. All green areas were highlighted for visualization.  
+   - **4.6: Color Simplification**  
+     Specific HSV masks for red, yellow, green, and blue were summed to retain only these colors, simplifying the image.  
+   - **4.7: Shape Segmentation**  
+     Detected shapes were extracted as bounding rectangles from contours (`cv2.boundingRect`) and saved as individual image files.  
+   - **4.8: Highlight Segmented Shapes**  
+     Each segmented shape was highlighted and visualized in a composite image for better understanding.
+
+This concise explanation provides insight into the techniques and OpenCV functions used for each task. 
+---
 
 ## 🚀 **How to Use**
 
