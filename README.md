@@ -67,7 +67,6 @@ Compute the area of each detected shape using contours.
 
 📷 **Output:**  
 ![Task 2](images/Task2.png)  
-[Task 2](images/Task2.png)  
 
 ---
 
@@ -77,15 +76,14 @@ Analyze a traffic signal image and identify the active signal (red, yellow, or g
 📷 **Outputs:**  
 - **Red Signal Active:**  
   ![Task 3-1](images/Task3-1.png)  
-  [Task 3-1](images/Task3-1.png)  
+
 
 - **Yellow Signal Active:**  
   ![Task 3-2](images/Task3-2.png)  
-  [Task 3-2](images/Task3-2.png)  
 
 - **Green Signal Active:**  
   ![Task 3-3](images/Task3-3.png)  
-  [Task 3-3](images/Task3-3.png)  
+ 
 
 ---
 
