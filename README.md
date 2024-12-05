@@ -54,7 +54,9 @@ Detect and calculate the centroids of shapes in the image. The centroids are out
 
 📷 **Output:**  
 ![Task 1.1](images/Task1.1.png)  
-[Task 1.1](images/Task1.2.png)  
+[Task 1.2](images/Task1.2.png)  
+[Task 1.3](images/Task1.3.png)  
+
 
 ---
 
