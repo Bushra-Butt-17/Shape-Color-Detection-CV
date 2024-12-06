@@ -9,6 +9,7 @@ This repository showcases tasks in computer vision, focusing on detecting shapes
 
 ## 📂 **Repository Structure**
 
+
 ```plaintext
 ├── Detailed-Observations.docx   # Detailed documentation of the observations
 ├── README.md                    # Project documentation
