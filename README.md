@@ -98,7 +98,7 @@ Detect circles with a radius above a certain threshold.
 
 📷 **Output:**  
 ![Task 4-1](images/Task4-1.png)  
-[Task 4-1](images/Task4-1.png)  
+[Task 4-2](images/Task4-2.png)  
 
 ---
 
@@ -106,7 +106,7 @@ Detect circles with a radius above a certain threshold.
 Detect circles with a radius below a certain threshold.  
 
 📷 **Output:**  
-![Task 4-2](images/Task4-2.png)  
+![Task 4-2](images/Task4-3.png)  
 [Task 4-2](images/Task4-2.png)  
 
 ---
