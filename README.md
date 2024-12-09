@@ -54,9 +54,12 @@ This project includes the following key tasks:
 Detect and calculate the centroids of shapes in the image. The centroids are output as (x, y) coordinates.
 
 📷 **Output:**
-- Task 1.1
-- Task 1.2
-- Task 1.3
+
+![Task 1.1](images/Task1.1.png)
+
+![Task 1.2](images/Task1.2.png)
+
+![Task 1.3](images/Task1.3.png)
 
 ---
 
@@ -65,7 +68,8 @@ Detect and calculate the centroids of shapes in the image. The centroids are out
 Compute the area of each detected shape using contours.
 
 📷 **Output:**
-- Task 2
+
+![Task 2](images/Task2.png)
 
 ---
 
@@ -76,11 +80,16 @@ Analyze a traffic signal image and identify the active signal (red, yellow, or g
 📷 **Outputs:**
 
 - **Red Signal Active:**
-   - Task 3-1
+
+  ![Task 3-1](images/Task3-1.png)
+
 - **Yellow Signal Active:**
-   - Task 3-2
+
+  ![Task 3-2](images/Task3-2.png)
+
 - **Green Signal Active:**
-   - Task 3-3
+
+  ![Task 3-3](images/Task3-3.png)
 
 ---
 
@@ -93,66 +102,79 @@ Detect geometric properties of shapes, corners, and color-based regions. This ta
 Detect circles with a radius above a certain threshold.
 
 📷 **Output:**
-- Task 4-1
-- Task 4-2
+
+![Task 4-1](images/Task4-1.png)
+
 
 #### **Task 4.2: Detect Small Circles**
 
 Detect circles with a radius below a certain threshold.
 
 📷 **Output:**
-- Task 4-2
-- Task 4-2
+
+![Task 4-2](images/Task4-2.png)
+
 
 #### **Task 4.3: Detect Corners**
 
 Detect corners of all shapes using the Harris Corner Detection method.
 
 📷 **Output:**
-- Task 4-3
-- Task 4-3
+
+![Task 4-3](images/Task4-3.png)
+
 
 #### **Task 4.4: Detect Red Circles**
 
 Detect and highlight red-colored circles.
 
 📷 **Output:**
-- Task 4-4
-- Task 4-4
+
+![Task 4-4](images/Task4-4.png)
+
+
 
 #### **Task 4.5: Detect Green Shapes**
 
 Detect and highlight all green-colored shapes.
 
 📷 **Output:**
-- Task 4-5
-- Task 4-5
+
+![Task 4-5](images/Task4-5.png)
+
 
 #### **Task 4.6: Color Simplification**
 
 Simplify the image by retaining only red, yellow, green, and blue colors.
 
 📷 **Output:**
-- Task 4-6
-- Task 4-6
+
+![Task 4-6](images/Task4-6.png)
+
+
 
 #### **Task 4.7: Shape Segmentation**
 
 Segment individual shapes from the image and save them as separate files.
 
 📷 **Output:**
-- Task 4-7
-- Task 4-7
+
+![Task 4-7](images/Task4-7.png)
+
 
 #### **Task 4.8: Highlight Segmented Shapes**
 
 Visualize segmented shapes together and highlight each one.
 
 📷 **Outputs:**
-- Task 4-8
-- Task 4-8
-- Task 4-8.1
-- Task 4-8.1
+
+![Task 4-8](images/Task4-8.png)
+
+
+
+![Task 4-8.1](images/Task4-8.1.png)
+
+
 
 ---
 
@@ -226,4 +248,3 @@ pip install opencv-python numpy
 Contributions are welcome! Feel free to open an issue or create a pull request.
 
 ---
-
