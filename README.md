@@ -1,20 +1,19 @@
 
-
 ---
 
 # 🖼️ **Shape and Color Detection with Computer Vision**
 
-This repository demonstrates tasks in computer vision using **OpenCV** and **Python**, focusing on detecting shapes, computing areas, identifying traffic signals, and segmenting shapes based on color. Each task is modularized into subprograms to ensure clarity and flexibility. 🚀
+This repository showcases tasks in computer vision, focusing on detecting shapes, computing areas, analyzing traffic signals, and segmenting shapes based on colors. 🚀
 
 ---
 
 ## 📂 **Repository Structure**
 
 ```plaintext
-├── Detailed-Observations.docx   # Comprehensive documentation of observations
+├── Detailed-Observations.docx   # Detailed documentation of the observations
 ├── README.md                    # Project documentation
-├── Shape_Recognition_and_Color_Segmentation.ipynb  # Jupyter notebook for all subprograms
-├── images/                      # Contains task output images
+├── Shape_Recognition_and_Color_Segmentation.ipynb  # Jupyter notebook for all tasks
+├── images/                      # Contains all task output images
 │   ├── Task1.1.png
 │   ├── Task1.2.png
 │   ├── Task1.3.png
@@ -29,205 +28,202 @@ This repository demonstrates tasks in computer vision using **OpenCV** and **Pyt
 │   ├── Task4-5.png
 │   ├── Task4-6.png
 │   ├── Task4-7.png
-│   ├── Task4-8.1.png
 │   ├── Task4-8.png
-│   └── ...
+│   ├── Task4-8.1.png
 ```
 
 ---
 
 ## 🛠️ **Features Implemented**
 
-This project consists of **8 key subprograms**:
+This project includes the following key tasks:
 
-1. ✨ **Subprogram 1: Detect Shape Coordinates and Display**  
-2. ✨ **Subprogram 2: Compute Shape Areas**  
-3. 🎯 **Subprogram 3: Detect Only Red Circles**  
-4. 🌿 **Subprogram 4: Detect All Green Shapes**  
-5. 🌟 **Subprogram 5: Detect Large Circles**  
-6. 🔴 **Subprogram 6: Detect Small Circles**  
-7. ✨ **Subprogram 7: Detect and Count Corners**  
-8. 📸 **Subprogram 8: Shape Segmentation and Display**
+- 🔍 **Detect Shape Coordinates**
+- 📐 **Compute Shape Areas**
+- 🚦 **Traffic Signal Detection**
+- 🟢 **Shape and Color Detection** (8 Subtasks)
 
 ---
 
-## 📖 **Subprograms Overview**
+## 📖 **Tasks Overview**
 
 ---
 
-### ✨ **Subprogram 1: Detect Shape Coordinates and Display**
-- **Objective:** Identify all shapes in the image and determine their centroids (geometric center).
-- **Method:**  
-  1. Convert the input image to grayscale and apply binary thresholding.  
-  2. Use `cv2.findContours` to detect contours.  
-  3. Calculate centroids using image moments (`cv2.moments`).  
-  4. Overlay the centroids on the image as `(x, y)` coordinates.  
+### **📝 Task 1: Detect Shape Coordinates**
 
-📷 **Output Example:**  
-- Shapes with their respective centroids:  
-  ![Task1.1](images/Task1.1.png)  
-  ![Task1.2](images/Task1.2.png)  
-  ![Task1.3](images/Task1.3.png)  
+Detect and calculate the centroids of shapes in the image. The centroids are output as (x, y) coordinates.
 
-**Use Cases:**  
-- Analyzing the spatial distribution of objects in an image.  
-- Robotic arm path planning.
+📷 **Output:**
+- Task 1.1
+- Task 1.2
+- Task 1.3
 
 ---
 
-### ✨ **Subprogram 2: Compute Shape Areas**
-- **Objective:** Compute the area of each detected shape and annotate the image with the calculated values.  
-- **Method:**  
-  1. Detect contours using the same method as Subprogram 1.  
-  2. Calculate the area of each contour using `cv2.contourArea`.  
-  3. Overlay the computed area near each shape for visualization.  
+### **📝 Task 2: Compute Shape Areas**
 
-📷 **Output Example:**  
-- Shape areas displayed:  
-  ![Task2](images/Task2.png)  
+Compute the area of each detected shape using contours.
 
-**Use Cases:**  
-- Object size analysis for quality control in manufacturing.  
-- Estimation of surface area in aerial imagery.
+📷 **Output:**
+- Task 2
 
 ---
 
-### 🎯 **Subprogram 3: Detect Only Red Circles**
-- **Objective:** Filter and highlight only red circles in the image.  
-- **Method:**  
-  1. Convert the image to HSV color space.  
-  2. Create masks for two red hue ranges (due to HSV's split red representation).  
-  3. Apply the Hough Circle Transform (`cv2.HoughCircles`) to detect circles in the masked image.  
-  4. Highlight detected red circles with bounding circles.  
+### **📝 Task 3: Traffic Signal Detection**
 
-📷 **Output Example:**  
-- Red circles detected and highlighted:  
-  ![Task3-1](images/Task3-1.png)  
-  ![Task3-2](images/Task3-2.png)  
-  ![Task3-3](images/Task3-3.png)  
+Analyze a traffic signal image and identify the active signal (red, yellow, or green).
 
-**Use Cases:**  
-- Traffic light detection in autonomous vehicles.  
-- Identifying warning signals in surveillance systems.
+📷 **Outputs:**
+
+- **Red Signal Active:**
+   - Task 3-1
+- **Yellow Signal Active:**
+   - Task 3-2
+- **Green Signal Active:**
+   - Task 3-3
 
 ---
 
-### 🌿 **Subprogram 4: Detect All Green Shapes**
-- **Objective:** Detect all shapes filled with green color.  
-- **Method:**  
-  1. Convert the image to HSV color space.  
-  2. Create a mask for green hues.  
-  3. Detect contours in the masked image and highlight the shapes.  
+### **📝 Task 4: Shape and Color Detection**
 
-📷 **Output Example:**  
-- Green shapes highlighted:  
-  ![Task4-1](images/Task4-1.png)  
-  ![Task4-2](images/Task4-2.png)  
-  ![Task4-3](images/Task4-3.png)  
-  ![Task4-4](images/Task4-4.png)  
-  ![Task4-5](images/Task4-5.png)  
-  ![Task4-6](images/Task4-6.png)  
-  ![Task4-7](images/Task4-7.png)  
-  ![Task4-8.1](images/Task4-8.1.png)  
-  ![Task4-8](images/Task4-8.png)  
+Detect geometric properties of shapes, corners, and color-based regions. This task includes eight subtasks:
 
-**Use Cases:**  
-- Environmental monitoring (detecting vegetation in satellite images).  
-- Sports analytics (e.g., identifying field markings).
+#### **Task 4.1: Detect Large Circles**
+
+Detect circles with a radius above a certain threshold.
+
+📷 **Output:**
+- Task 4-1
+- Task 4-2
+
+#### **Task 4.2: Detect Small Circles**
+
+Detect circles with a radius below a certain threshold.
+
+📷 **Output:**
+- Task 4-2
+- Task 4-2
+
+#### **Task 4.3: Detect Corners**
+
+Detect corners of all shapes using the Harris Corner Detection method.
+
+📷 **Output:**
+- Task 4-3
+- Task 4-3
+
+#### **Task 4.4: Detect Red Circles**
+
+Detect and highlight red-colored circles.
+
+📷 **Output:**
+- Task 4-4
+- Task 4-4
+
+#### **Task 4.5: Detect Green Shapes**
+
+Detect and highlight all green-colored shapes.
+
+📷 **Output:**
+- Task 4-5
+- Task 4-5
+
+#### **Task 4.6: Color Simplification**
+
+Simplify the image by retaining only red, yellow, green, and blue colors.
+
+📷 **Output:**
+- Task 4-6
+- Task 4-6
+
+#### **Task 4.7: Shape Segmentation**
+
+Segment individual shapes from the image and save them as separate files.
+
+📷 **Output:**
+- Task 4-7
+- Task 4-7
+
+#### **Task 4.8: Highlight Segmented Shapes**
+
+Visualize segmented shapes together and highlight each one.
+
+📷 **Outputs:**
+- Task 4-8
+- Task 4-8
+- Task 4-8.1
+- Task 4-8.1
 
 ---
 
-### 🌟 **Subprogram 5: Detect Large Circles**
-- **Objective:** Detect circles above a specified radius threshold.  
-- **Method:**  
-  1. Convert the image to grayscale.  
-  2. Apply the Hough Circle Transform with a large radius threshold to isolate large circles.  
+## 🧑‍💻 **Implementation Details**
 
-📷 **Output Example:**  
-- Large circles detected:  
-  ![Task5](images/Task5.png)  
+Here’s how each task was implemented:
 
-**Use Cases:**  
-- Identifying circular structures in construction or design plans.  
-- Detecting planets or craters in astronomical images.
+### **Detect Shape Coordinates**
+- **Method:** Shapes were identified using contour detection (`cv2.findContours`). The centroids were calculated using moments (`cv2.moments`) to determine the geometric center of each shape.
 
----
+### **Compute Shape Areas**
+- **Method:** The area of each shape was computed using the contour area function (`cv2.contourArea`) after detecting contours in the binary image.
 
-### 🔴 **Subprogram 6: Detect Small Circles**
-- **Objective:** Detect circles below a specified radius threshold.  
-- **Method:**  
-  1. Follow the same process as Subprogram 5 but adjust the radius threshold for smaller circles.  
+### **Traffic Signal Detection**
+- **Method:** The image was converted to HSV color space. Masks were created for red, yellow, and green hues. Pixel intensities in these masks determined which signal was active.
 
-📷 **Output Example:**  
-- Small circles detected:  
-  ![Task6](images/Task6.png)  
+### **Shape and Color Detection**
 
-**Use Cases:**  
-- Detecting small objects like coins in sorting machines.  
-- Particle size analysis in materials research.
+#### **4.1 & 4.2: Detect Large and Small Circles**
+- **Method:** Circle detection was implemented using the Hough Circle Transform (`cv2.HoughCircles`) with varying radius thresholds.
 
----
+#### **4.3: Detect Corners**
+- **Method:** Corners were detected using the Harris Corner Detection (`cv2.goodFeaturesToTrack`) to identify distinct corners in the shapes.
 
-### ✨ **Subprogram 7: Detect and Count Corners**
-- **Objective:** Detect distinct corners of all shapes in the image.  
-- **Method:**  
-  1. Use the Harris Corner Detection method (`cv2.goodFeaturesToTrack`) to find corners.  
-  2. Highlight corners on the image.  
+#### **4.4: Detect Red Circles**
+- **Method:** The red color was isolated using HSV masks for two red hue ranges, and circles were filtered from the result using Hough Circle Transform.
 
-📷 **Output Example:**  
-- Corners detected and marked:  
-  ![Task7](images/Task7.png)  
+#### **4.5: Detect Green Shapes**
+- **Method:** The green color was detected using an HSV mask. All green areas were highlighted for visualization.
 
-**Use Cases:**  
-- Edge detection in 3D modeling.  
-- Feature extraction in image registration.
+#### **4.6: Color Simplification**
+- **Method:** Specific HSV masks for red, yellow, green, and blue were summed to retain only these colors, simplifying the image.
 
----
+#### **4.7: Shape Segmentation**
+- **Method:** Detected shapes were extracted as bounding rectangles from contours (`cv2.boundingRect`) and saved as individual image files.
 
-### 📸 **Subprogram 8: Shape Segmentation and Display**
-- **Objective:** Segment individual shapes, save them as separate files, and overlay them with highlights for visualization.  
-- **Method:**  
-  1. Detect contours and extract bounding rectangles for each shape (`cv2.boundingRect`).  
-  2. Crop the shape regions and save them as separate image files.  
-  3. Visualize the segmentation by overlaying the shapes with unique highlights.  
-
-📷 **Output Example:**  
-- Segmented shapes visualized:  
-  ![Task8](images/Task8.png)  
-
-**Use Cases:**  
-- Dataset creation for machine learning models.  
-- Isolating objects in medical imaging (e.g., tumors in X-rays).
+#### **4.8: Highlight Segmented Shapes**
+- **Method:** Each segmented shape was highlighted and visualized in a composite image for better understanding.
 
 ---
 
 ## 🚀 **How to Use**
 
-1. **Clone the repository:**  
-   ```bash
-   git clone https://github.com/your-username/Shape-Color-Detection-CV.git
-   ```
-2. **Install dependencies:**  
-   ```bash
-   pip install opencv-python numpy matplotlib
-   ```
-3. **Run the Jupyter notebook:**  
-   ```bash
-   jupyter notebook Shape_Recognition_and_Color_Segmentation.ipynb
-   ```
-4. **Explore detailed outputs:** Check `Detailed-Observations.docx` for explanations.
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/your-username/Shape-Color-Detection-CV.git
+```
+
+2. **Install dependencies:**
+
+```bash
+pip install opencv-python numpy
+```
+
+3. **Open and run the `Shape_Recognition_and_Color_Segmentation.ipynb` notebook.**
+
+4. **View the detailed observations in `Detailed-Observations.docx`.**
 
 ---
 
 ## 🛠️ **Technologies Used**
-
-- **Python** 🐍  
-- **OpenCV** 🖼️  
-- **Numpy** 🔢  
-- **Matplotlib** 📊  
+- Python 🐍
+- OpenCV 🖼️
+- Numpy 🔢
 
 ---
 
 ## 🙌 **Contributions**
 
-Contributions are welcome! Whether it's reporting bugs, suggesting features, or improving the code, feel free to open an issue or submit a pull request.
+Contributions are welcome! Feel free to open an issue or create a pull request.
+
+---
+
