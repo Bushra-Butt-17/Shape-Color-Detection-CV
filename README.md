@@ -1,9 +1,10 @@
 
+
 ---
 
 # 🖼️ **Shape and Color Detection with Computer Vision**
 
-This repository showcases tasks in computer vision, focusing on detecting shapes, computing areas, analyzing traffic signals, and segmenting shapes based on colors. 🚀
+Welcome to the **Shape and Color Detection** repository! This project leverages computer vision techniques to detect shapes, analyze their properties, and work with color segmentation. The core functionality includes detecting various shapes, computing areas, traffic signal analysis, and segmenting images based on colors. 🚀
 
 ---
 
@@ -36,7 +37,7 @@ This repository showcases tasks in computer vision, focusing on detecting shapes
 
 ## 🛠️ **Features Implemented**
 
-This project includes the following key tasks:
+This project consists of several key tasks that cover various aspects of computer vision, such as shape detection, color segmentation, and traffic signal analysis.
 
 - 🔍 **Detect Shape Coordinates**
 - 📐 **Compute Shape Areas**
@@ -46,8 +47,6 @@ This project includes the following key tasks:
 ---
 
 ## 📖 **Tasks Overview**
-
----
 
 ### **📝 Task 1: Detect Shape Coordinates**
 
@@ -97,90 +96,69 @@ Analyze a traffic signal image and identify the active signal (red, yellow, or g
 
 Detect geometric properties of shapes, corners, and color-based regions. This task includes eight subtasks:
 
-#### **Task 4.1: Detect Large Circles**
-
+#### **Subprogram 5: Detecting Large Circles 🌟**
 Detect circles with a radius above a certain threshold.
 
 📷 **Output:**
 
 ![Task 4-1](images/Task4-1.png)
 
-
-#### **Task 4.2: Detect Small Circles**
-
+#### **Subprogram 6: Detecting Small Circles 🔴**
 Detect circles with a radius below a certain threshold.
 
 📷 **Output:**
 
 ![Task 4-2](images/Task4-2.png)
 
-
-#### **Task 4.3: Detect Corners**
-
+#### **Subprogram 7: Detect and Count Corners ✨**
 Detect corners of all shapes using the Harris Corner Detection method.
 
 📷 **Output:**
 
 ![Task 4-3](images/Task4-3.png)
 
-
-#### **Task 4.4: Detect Red Circles**
-
+#### **Subprogram 3: Detect Only Red Circles 🎯**
 Detect and highlight red-colored circles.
 
 📷 **Output:**
 
 ![Task 4-4](images/Task4-4.png)
 
-
-
-#### **Task 4.5: Detect Green Shapes**
-
+#### **Subprogram 4: Detect All Green Shapes 🌿**
 Detect and highlight all green-colored shapes.
 
 📷 **Output:**
 
 ![Task 4-5](images/Task4-5.png)
 
-
-#### **Task 4.6: Color Simplification**
-
+#### **Subprogram 6: Color Simplification**
 Simplify the image by retaining only red, yellow, green, and blue colors.
 
 📷 **Output:**
 
 ![Task 4-6](images/Task4-6.png)
 
-
-
-#### **Task 4.7: Shape Segmentation**
-
+#### **Subprogram 8: Shape Segmentation and Display 📸**
 Segment individual shapes from the image and save them as separate files.
 
 📷 **Output:**
 
 ![Task 4-7](images/Task4-7.png)
 
-
-#### **Task 4.8: Highlight Segmented Shapes**
-
+#### **Subprogram 8: Highlight Segmented Shapes 📸**
 Visualize segmented shapes together and highlight each one.
 
 📷 **Outputs:**
 
 ![Task 4-8](images/Task4-8.png)
 
-
-
 ![Task 4-8.1](images/Task4-8.1.png)
-
-
 
 ---
 
 ## 🧑‍💻 **Implementation Details**
 
-Here’s how each task was implemented:
+Each task was implemented using OpenCV and Python for image processing. Below is a brief explanation of how each task was carried out:
 
 ### **Detect Shape Coordinates**
 - **Method:** Shapes were identified using contour detection (`cv2.findContours`). The centroids were calculated using moments (`cv2.moments`) to determine the geometric center of each shape.
@@ -237,14 +215,15 @@ pip install opencv-python numpy
 ---
 
 ## 🛠️ **Technologies Used**
-- Python 🐍
-- OpenCV 🖼️
-- Numpy 🔢
+
+- **Python** 🐍
+- **OpenCV** 🖼️
+- **Numpy** 🔢
 
 ---
 
 ## 🙌 **Contributions**
 
-Contributions are welcome! Feel free to open an issue or create a pull request.
+Contributions are welcome! Feel free to open an issue or create a pull request to improve the project.
 
 ---
