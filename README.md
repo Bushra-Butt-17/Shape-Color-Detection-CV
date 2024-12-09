@@ -232,7 +232,7 @@ Each task was implemented using OpenCV and Python for image processing. Below is
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/Shape-Color-Detection-CV.git
+git clone https://github.com/Bushra-Butt-17/Shape-Color-Detection-CV.git
 ```
 
 2. **Install dependencies:**
