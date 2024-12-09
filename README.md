@@ -1,5 +1,4 @@
 
-
 ---
 
 # 🖼️ **Shape and Color Detection with Computer Vision**
@@ -100,69 +99,89 @@ Detect geometric properties of shapes, corners, and color-based regions. This ta
 - **Technique:**
   - **Contour Detection:** Uses `cv2.findContours` to detect shapes in an image.
   - **Centroid Calculation:** The centroid (center) of each shape is computed using image moments (`cv2.moments`), providing the (x, y) coordinates.
+  
+📷 **Output:**
+- **Detected Shape Coordinates:**
+
+  ![Task 4-1](images/Task4-1.png)
+
+---
 
 #### **Subprogram 2: Compute Area**
 - **Technique:**
   - **Contour Area Calculation:** After detecting contours, the area of each shape is calculated using `cv2.contourArea` on the binary image, providing the area of each shape.
+
+📷 **Output:**
+- **Calculated Shape Areas:**
+
+  ![Task 4-2](images/Task4-2.png)
+
+---
 
 #### **Subprogram 3: Detect Red Circles**
 - **Technique:**
   - **HSV Masking:** A mask is applied to isolate the red color in the image using the HSV color space.
   - **Circle Detection:** The Hough Circle Transform (`cv2.HoughCircles`) is then used to detect red circles based on radius and circularity criteria.
 
+📷 **Output:**
+- **Detected Red Circles:**
+
+  ![Task 4-3](images/Task4-3.png)
+
+---
+
 #### **Subprogram 4: Detect Green Shapes**
 - **Technique:**
   - **HSV Masking:** A mask is created for the green color in the image using the HSV color space.
   - **Shape Highlighting:** The mask is applied to isolate and highlight all green shapes in the image.
 
+📷 **Output:**
+- **Detected Green Shapes:**
+
+  ![Task 4-4](images/Task4-4.png)
+
+---
+
 #### **Subprogram 5: Detect Large Circles**
 - **Technique:**
   - **Modified Circle Detection:** Similar to Subprogram 3, but with larger radius thresholds in the Hough Circle Transform to specifically detect large circles.
+
+📷 **Output:**
+- **Detected Large Circles:**
+
+  ![Task 4-5](images/Task4-5.png)
+
+---
 
 #### **Subprogram 6: Detect Small Circles**
 - **Technique:**
   - **Modified Circle Detection:** The Hough Circle Transform is applied with smaller radius thresholds to detect small circles within the image.
 
+📷 **Output:**
+- **Detected Small Circles:**
+
+  ![Task 4-6](images/Task4-6.png)
+
+---
+
 #### **Subprogram 7: Detect and Count Corners**
 - **Technique:**
   - **Harris Corner Detection:** The function `cv2.goodFeaturesToTrack` detects corners in the shapes, identifying distinct points of intersection or sharp angles.
+
+📷 **Output:**
+- **Detected Corners:**
+
+  ![Task 4-7](images/Task4-7.png)
+
+---
 
 #### **Subprogram 8: Shape Segmentation and Display**
 - **Technique:**
   - **Shape Segmentation:** Individual shapes are segmented from the image, isolated based on contours, and saved as separate image files for further analysis.
   - **Shape Display:** The segmented shapes are visualized and highlighted in the original image for better understanding.
 
-📷 **Outputs:**
-
-- **Large Circles:**
-
-  ![Task 4-1](images/Task4-1.png)
-
-- **Small Circles:**
-
-  ![Task 4-2](images/Task4-2.png)
-
-- **Corners:**
-
-  ![Task 4-3](images/Task4-3.png)
-
-- **Red Circles:**
-
-  ![Task 4-4](images/Task4-4.png)
-
-- **Green Shapes:**
-
-  ![Task 4-5](images/Task4-5.png)
-
-- **Simplified Color Image:**
-
-  ![Task 4-6](images/Task4-6.png)
-
-- **Segmented Shapes:**
-
-  ![Task 4-7](images/Task4-7.png)
-
-- **Highlighted Segmented Shapes:**
+📷 **Output:**
+- **Segmented Shapes and Final Display:**
 
   ![Task 4-8](images/Task4-8.png)
 
@@ -235,6 +254,16 @@ pip install opencv-python numpy
 - **Numpy** 🔢
 
 ---
+
+
+
+## 📜 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to modify and extend the project as you see fit. Happy coding! 👩‍💻👨‍💻
 
 ## 🙌 **Contributions**
 
