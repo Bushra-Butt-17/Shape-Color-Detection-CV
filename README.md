@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/35d6fff4-3978-40a0-9199-d0b7a48a742b" alt="Mario_1-gif" style="max-width: 100%; height: auto;"/>
+  <img src="https://github.com/user-attachments/assets/35d6fff4-3978-40a0-9199-d0b7a48a742b" alt="Mario_1-gif" style="width: 100%; height: auto;"/>
 </div>
+
 
 
 ---
