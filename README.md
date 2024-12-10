@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/dcd7b2ab-5a12-4968-ba2d-06c7eb00451f)
+
+![Mario_1-gif](https://github.com/user-attachments/assets/35d6fff4-3978-40a0-9199-d0b7a48a742b)
 
 ---
 
