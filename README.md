@@ -3,6 +3,7 @@
 
 ---
 
+
 # 🖼️ **Shape and Color Detection with Computer Vision**
 
 Welcome to the **Shape and Color Detection** repository! This project leverages computer vision techniques to detect shapes, analyze their properties, and work with color segmentation. The core functionality includes detecting various shapes, computing areas, traffic signal analysis, and segmenting images based on colors. 🚀
